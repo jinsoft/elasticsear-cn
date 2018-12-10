@@ -1,0 +1,105 @@
+{
+  "title": "Elasticsearch 中文手册",
+  "description":"Elasticsearch",
+  "author":"ainiok",
+  "language": "zh-hans",
+  "generator": "site",
+  "gitbook": "3.2.3",
+  "structure": {
+    "readme": "README.md"
+  },
+  "links": {
+    "sidebar": {
+      "Home": "http://es.ainiok.com"
+    }
+  },
+  "plugins": [
+    "-search",
+    "3-ba",
+    "alerts",
+    "copy-code-button",
+    "favicon",
+    "todo",
+    "github@^2.0.0",
+    "github-buttons@2.1.0",
+    "anchors",
+    "theme-comscore",
+    "expandable-chapters-small",
+    "search-plus",
+    "-sharing",
+    "sharing-plus",
+    "sectionx",
+    "tbfed-pagefooter",
+    "edit-link@^2.0.2",
+    "anchor-navigation-ex",
+    "codeblock-filename",
+    "advanced-emoji",
+    "simple-page-toc@^0.1.1"
+  ],
+  "pluginsConfig":{
+    "github":{
+      "url":"https://github.com/jinsoft/elasticsear-cn.git"
+    },
+    "github-buttons":{
+      "repo":"jinsoft/elasticsear-cn",
+      "types": [
+        "star"
+      ],
+      "size": "small"
+    },
+    "theme-default": {
+      "showLevel": true
+    },
+    "sharing": {
+      "douban": false,
+      "facebook": false,
+      "hatenaBookmark": false,
+      "instapaper": false,
+      "line": false,
+      "linkedin": false,
+      "messenger": false,
+      "pocket": false,
+      "qq": true,
+      "qzone": true,
+      "stumbleupon": false,
+      "twitter": false,
+      "viber": false,
+      "vk": false,
+      "weibo": true,
+      "whatsapp": false,
+      "all": [
+        "facebook", "google", "twitter",
+        "instapaper", "linkedin",
+        "pocket", "stumbleupon"
+      ]
+    },
+    "sitemap-general": {
+      "prefix": "https://es.ainiok.com"
+    },
+    "edit-link": {
+      "base": "https://github.com/jinsoft/elasticsear-cn/blob/master",
+      "label": "编辑此页"
+    },
+    "favicon": {
+      "shortcut": "resource/images/favicon.ico",
+      "bookmark": "resource/images/favicon.ico"
+    },
+    "anchor-navigation-ex": {
+      "isRewritePageTitle": false,
+      "tocLevel1Icon": "fa fa-hand-o-right",
+      "tocLevel2Icon": "fa fa-hand-o-right",
+      "tocLevel3Icon": "fa fa-hand-o-right"
+    },
+    "tbfed-pagefooter": {
+      "copyright": "Copyright © es.ainiok.com 2018",
+      "modify_label": "修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "sectionx": {
+      "tag": "b"
+    },
+    "3-ba": {
+      "token": "8a8b4b6ab40d2107d49f836eb89eb7f6"
+    }
+  }
+}
