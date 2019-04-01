@@ -2,9 +2,15 @@
 
 理解Elasticsearch最好的方式是去运行它，让我们开始吧！
 
-安装Elasticsearch唯一的要求是安装官方新版的Java，地址：[www.java.com](http://www.java.com)
+Elasticsearch至少需要安装Java8，建议使用JDK版本1.8.0以上，Java安装因平台而异，可以在[Oracle的网站](http://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)上找到Oracle推荐的安装文档 
+,在安装Elasticsearch之前，请先运行检查Java版本
 
-你可以从 [elasticsearch.org\/download](http://www.elasticsearch.org/download/) 下载最新版本的Elasticsearch。
+```bash
+java -version
+echo $JAVA_HOME
+```
+
+设置了java之后，我们就可以下载并运行Elasticsearch从 [www.elastic.co\/downloads/](https://www.elastic.co/downloads/) 下载最新版本的Elasticsearch。
 
 ```bash
 curl -L -O http://download.elasticsearch.org/PATH/TO/VERSION.zip <1>
@@ -12,16 +18,16 @@ unzip elasticsearch-$VERSION.zip
 cd  elasticsearch-$VERSION
 ```
 
-1. 从 [elasticsearch.org\/download](http://www.elasticsearch.org/download/) 获得最新可用的版本号并填入URL中
+1. 从 [elastic.co\/download](https://www.elastic.co/downloads/) 获得最新可用的版本号并填入URL中
 
 > **提示：**
 > 
-> 在生产环境安装时，除了以上方法，你还可以使用Debian或者RPM安装包，地址在这里：[downloads page](http://www.elasticsearch.org/downloads)，或者也可以使用官方提供的 [Puppet module](https://github.com/elasticsearch/puppet-elasticsearch) 或者
+> 在生产环境安装时，除了以上方法，你还可以使用Debian或者RPM安装包，地址在这里：[downloads page](https://www.elastic.co/downloads/)，或者也可以使用官方提供的 [Puppet module](https://github.com/elasticsearch/puppet-elasticsearch) 或者
 > [Chef cookbook](https://github.com/elasticsearch/cookbook-elasticsearch)。
 
 ## 安装Marvel
 
-[Marvel](http://www.elasticsearch.com/marvel)是Elasticsearch的管理和监控工具，在开发环境下免费使用。它包含了一个叫做`Sense`的交互式控制台，使用户方便的通过浏览器直接与Elasticsearch进行交互。
+[Marvel](https://www.elastic.co/downloads/marvel)是Elasticsearch的管理和监控工具，在开发环境下免费使用。它包含了一个叫做`Sense`的交互式控制台，使用户方便的通过浏览器直接与Elasticsearch进行交互。
 
 Elasticsearch线上文档中的很多示例代码都附带一个`View in Sense`的链接。点击进去，就会在`Sense`控制台打开相应的实例。安装Marvel不是必须的，但是它可以通过在你本地Elasticsearch集群中运行示例代码而增加与此书的互动性。
 
